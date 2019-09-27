@@ -23,7 +23,7 @@ complex complex::sum_complex(complex a) {
     a3=a1+a2;
     b3=b1+b2;
     res.r=sqrt(pow(a3,2)+pow(b3,2));
-    res.q=(atan(b3/a3))/M_PI;
+    res.q=(atan2(b3,a3))/M_PI;
     return res;
 }
 
@@ -37,7 +37,7 @@ complex complex::diff_complex(complex a) {
     a3=a1-a2;
     b3=b1-b2;
     res.r=sqrt(pow(a3,2)+pow(b3,2));
-    res.q=(atan(b3/a3))/M_PI;
+    res.q=(atan2(b3,a3))/M_PI;
     return res;
 }
 
